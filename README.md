@@ -26,66 +26,23 @@ A clean, beginner-friendly RESTful API for managing a library's book inventory, 
 ```text
 MT_1_FSDSEM3_UTKARSH-KESHARI_1265_EXAM-2/
 │
-├── server.js          # Express app, in-memory array, validation, and all 6 endpoints
-├── package.json       # Project dependencies (express) and npm start script
-├── package-lock.json  # Dependency lockfile
-├── .gitignore         # Excludes node_modules from git submission
-└── README.md          # Complete project documentation and testing instructions
+├── library-management/
+│   ├── server.js          # Express app, in-memory array, validation, and all 6 endpoints
+│   ├── package.json       # Project dependencies (express) and npm start script
+│   ├── package-lock.json  # Dependency lockfile
+│   └── README.md          # Project documentation and API instructions
+│
+├── .gitignore             # Excludes node_modules from git submission
+└── README.md              # Root repository documentation
 ```
 
 ---
 
-## 3. Data Structure
+## 3. Setup and Run Instructions
 
-Each book record contains the following fields:
-
-| Field | Data Type | Description | Required |
-|---|---|---|---|
-| `id` | `Number` | Unique identifier generated automatically by the application | Auto-generated |
-| `title` | `String` | Title of the book (set-specific field) | Yes |
-| `author` | `String` | Name of the author | Yes |
-| `genre` | `String` | Book category or genre | Yes |
-| `publishedYear` | `Number` | Year of publication (numeric integer) | Yes |
-| `available` | `Boolean` | Availability status (`true` or `false`) | Yes |
-
-### Initial In-Memory Records:
-```json
-[
-  {
-    "id": 101,
-    "title": "Wings of Fire",
-    "author": "A.P.J. Abdul Kalam",
-    "genre": "Autobiography",
-    "publishedYear": 1999,
-    "available": true
-  },
-  {
-    "id": 102,
-    "title": "The Alchemist",
-    "author": "Paulo Coelho",
-    "genre": "Fiction",
-    "publishedYear": 1988,
-    "available": true
-  },
-  {
-    "id": 103,
-    "title": "Harry Potter",
-    "author": "J.K. Rowling",
-    "genre": "Fantasy",
-    "publishedYear": 1997,
-    "available": false
-  }
-]
-```
-
----
-
-## 4. Setup and Run Instructions
-
-### Step 1: Clone the repository and navigate into it
+### Step 1: Navigate to the `library-management` directory
 ```bash
-git clone https://github.com/utkarsh1906-keshari/MT_1_FSDSEM3_UTKARSH-KESHARI_1265_EXAM-2.git
-cd MT_1_FSDSEM3_UTKARSH-KESHARI_1265_EXAM-2
+cd library-management
 ```
 
 ### Step 2: Install Dependencies
